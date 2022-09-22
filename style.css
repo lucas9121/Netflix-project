@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    background: url(./images/netflix\ background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: scroll;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: transparent;
+}
+
+header h2 {
+    font-family: 'Bebas';
+    color: red;
+    font-size: 40px;
+    margin: 0;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100%; */
+    width: 100vw;
+}
+
+main > div:nth-child(1) {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 75px 0;
+    text-align: center;
+    width: 100%;
+    /* z-index: 1; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > div:nth-child(1) h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+main > div:nth-child(1) h2 {
+    font-size: 1.625rem;
+}
+
+.membership{
+    width: 100%;
+}
+
+.emailRow{
+    display: flex;
+    max-width: 950px;
+    height: 70px;
+}
+
+.emailRow input{
+    flex: 2;
+    font-size: 16px;
+    padding: 10px 10px 0;
+    height: 100%;
+    border: 1px solid #8c8c8c;
+}
+
+.emailRow button {
+    flex: 1;
+    font-size: 1.875rem;
+    height: 100%;
+    background: red;
+    color: white;
+    border-left: 1px solid #333;
+    border-radius: 2px 0 0 2px;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+}
+
+.wrapper{
+    background-color: black;
+    width: 100%;
+}
+
+.row{
+    border-top: solid 4px gray;
+    padding: 15px 0;
+    padding: 70px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    width: 100%;
+    max-width: 1800px;
+}
+
+.image {
+    position: relative;
+}
+
+.image > img {
+    object-fit: cover;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#TV {
+    position: absolute;
+    top: 20%;
+    right: 14%;
+    z-index: 1;
+}
+
+#comp {
+    position: absolute;
+    top: 10%;
+    width: 62%;
+    right: 20%;
+    z-index: 1;
+}
+
+.text{
+    height: 100%;
+    width: 32%;
+}
+
+.text > h3 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.text > p {
+    font-size: 1.625rem;
+    font-weight: 400;
+    width: 500px;
+}
