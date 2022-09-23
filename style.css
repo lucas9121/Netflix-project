@@ -39,7 +39,7 @@ header > div {
     width: 15%;
 }
 
-header > div > select {
+.language {
     padding: 5px 15px;
     background: black;
     color: white;
@@ -232,4 +232,49 @@ main > div:nth-child(1) h2 {
     background-repeat: no-repeat;
     height: 3em;
     width: 3em;
+}
+
+footer{
+    background-color: black;
+    border-top: solid 4px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #737373;
+}
+
+footer > div {
+    padding: 40px 0;
+}
+
+footer > div > p {
+    font-size: 1.2rem;
+}
+
+footer > div > nav {
+    display: flex;
+    gap: 8em;
+    justify-content: space-between;
+}
+
+footer > div > nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation > a {
+    text-decoration: none;
+    color: #737373;
+    font-size: 0.85rem;
+}
+
+.navigation > a:hover {
+    text-decoration: underline;
 }
