@@ -20,38 +20,56 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 10px 20px;
     background: transparent;
+    background: #000000cc;
 }
 
 header h2 {
     font-family: 'Bebas';
     color: red;
-    font-size: 40px;
+    font-size: 4rem;
     margin: 0;
 }
 
 header > div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 15%;
+}
+
+header > div > select {
+    padding: 5px 15px;
+    background: black;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 4px;
+}
+
+header > div > button {
+    background: red;
+    color: white;
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 100%; */
     width: 100vw;
+    background: linear-gradient(0deg, #000000cc 0, transparent 60%, #000000cc);
 }
 
 main > div:nth-child(1) {
     margin: 0 auto;
     max-width: 950px;
-    padding: 75px 0;
+    padding: 8em 0;
     text-align: center;
     width: 100%;
-    /* z-index: 1; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,11 +82,15 @@ main > div:nth-child(1) h1 {
 }
 
 main > div:nth-child(1) h2 {
-    font-size: 1.625rem;
+    font-size: 1.825rem;
 }
 
 .membership{
     width: 100%;
+}
+
+.membership > p {
+    font-size: 1.5rem;
 }
 
 .emailRow{
@@ -79,7 +101,7 @@ main > div:nth-child(1) h2 {
 
 .emailRow input{
     flex: 2;
-    font-size: 16px;
+    font-size: 1.2rem;
     padding: 10px 10px 0;
     height: 100%;
     border: 1px solid #8c8c8c;
@@ -89,11 +111,17 @@ main > div:nth-child(1) h2 {
     flex: 1;
     font-size: 1.875rem;
     height: 100%;
-    background: red;
+    background: #d10000;
     color: white;
+    border: solid .5px #333;
     border-left: 1px solid #333;
     border-radius: 2px 0 0 2px;
     box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+}
+
+.emailRow button:hover {
+    cursor: pointer;
+    background: red;
 }
 
 .wrapper{
@@ -160,4 +188,48 @@ main > div:nth-child(1) h2 {
     font-size: 1.625rem;
     font-weight: 400;
     width: 500px;
+}
+
+.STBanner {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background: black;
+    border: solid 2px #ffffff40;
+    border-radius: 10px;
+    padding: 9px;
+    width: 50%;
+    position: absolute;
+    top: 355px;
+    left: 160px;
+    z-index: 2;
+}
+
+.STBanner > img {
+    height: 5em;
+}
+
+.STText {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.STText > p {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.STText > p:nth-child(2) {
+    color: blue;
+    font-size: 0.95rem;
+}
+
+.STVideo {
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 3em;
+    width: 3em;
 }
